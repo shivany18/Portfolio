@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivany K | Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+/* Expand/Collapse Projects */
+.project-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.project-card.active .project-details {
+    max-height: 400px;
+}
+
+/* Click effect */
+.project-card {
+    cursor: pointer;
+}
+
+/* Optional arrow */
+.arrow {
+    float: right;
+    transition: 0.3s;
+}
+
+.project-card.active .arrow {
+    transform: rotate(180deg);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Shivany</h2>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#coding">Coding Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="hero hero-modern">
+
+    <div class="hero-text">
+        <h1>Hi, I'm <span>Shivany K</span></h1>
+        <h2>Creative <span class="highlight">Developer</span></h2>
+
+        <p>
+            Passionate about building real-world applications and solving problems 
+            using Java, SQL, and Web Development.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="files/ShivanyResume-1.pdf" target="_blank" class="btn">View CV</a>
+            <a href="files/ShivanyResume-1.pdf" download class="btn-outline">Download CV</a>
+            <a href="#projects" class="btn-outline">View Projects</a>
+        </div>
+    </div>
+
+    <div class="hero-img">
+        <img src="images/Photocut.png" alt="Profile">
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="card">
+    <h2>About Me</h2>
+    <p>
+        I am an IT student and aspiring Full Stack Developer with strong hands-on experience in Java, SQL, Python, and Web Development. 
+        I have built real-world projects that strengthened my understanding of frontend and backend technologies.
+        <br><br>
+        I am passionate about problem-solving and continuously improving my skills through coding practice, especially in SQL and Data Structures. 
+        <br><br>
+        Along with technical skills, I bring strong communication, teamwork, and time management abilities.
+    </p>
+
+    <div class="info">
+        <p><b>Email:</b> shivanykumar18@gmail.com</p>
+        <p><b>Location:</b> Tiruvallur, Tamil Nadu</p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="card">
+    <h2>Skills</h2>
+    <div class="grid">
+        <div>Java</div>
+        <div>SQL</div>
+        <div>Python</div>
+        <div>HTML & CSS</div>
+        <div>JavaScript</div>
+        <div>CodeIgniter</div>
+    </div>
+</section>
+
+<!-- SOFT SKILLS -->
+<section class="card">
+    <h2>Soft Skills</h2>
+    <div class="grid">
+        <div>Communication</div>
+        <div>Teamwork</div>
+        <div>Problem Solving</div>
+        <div>Time Management</div>
+        <div>Adaptability</div>
+        <div>Leadership</div>
+    </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="card">
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+        <div class="project-card" onclick="toggleProject(this)">
+            <h3>Restaurant Management System <span class="arrow">▼</span> </h3>
+
+            <div class="project-details">
+                <p>
+                    Built a full-stack web application using CodeIgniter and MySQL 
+                    to manage restaurant operations.
+                </p>
+
+                <p><b>Tech Used:</b> CodeIgniter, MySQL, HTML, CSS, Bootstrap</p>
+
+                <ul>
+                    <li>Implemented admin authentication and session management</li>
+                    <li>Developed reservation and feedback system</li>
+                    <li>Added feedback approval feature (admin control)</li>
+                    <li>Followed MVC architecture for clean structure</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" onclick="toggleProject(this)">
+            <h3>Deepfake Detection API <span class="arrow">▼</span></h3>
+
+            <div class="project-details">
+                <p>
+                    Developed a REST API using FastAPI to detect deepfake content 
+                    using a machine learning model.
+                </p>
+
+                <p><b>Tech Used:</b> Python, FastAPI</p>
+
+                <ul>
+                    <li>Created API endpoints for real-time processing</li>
+                    <li>Integrated ML model for prediction</li>
+                    <li>Handled request-response efficiently</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" onclick="toggleProject(this)">
+            <h3>Menstrualuna – Health Tracker <span class="arrow">▼</span></h3>
+
+            <div class="project-details">
+                <p>
+                    Built a cycle tracking web app with structured data handling 
+                    and a chatbot for user assistance.
+                </p>
+
+                <p><b>Tech Used:</b> TypeScript, Python, Web Technologies</p>
+
+                <ul>
+                    <li>Designed responsive user interface</li>
+                    <li>Implemented rule-based chatbot</li>
+                    <li>Managed structured user data efficiently</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--CODING -->>
+<section id="coding" class="card">
+    <h2>Coding Skills</h2>
+
+    <div class="grid">
+        <div>Problem Solving</div>
+        <div>Data Structures</div>
+        <div>Algorithms</div>
+        <div>SQL Query Writing</div>
+        <div>Debugging</div>
+        <div>Logical Thinking</div>
+    </div>
+</section> 
+
+<!--LANGUAGES-->>
+<section class="card">
+    <h2>Languages Known</h2>
+
+    <div class="grid">
+        <div>
+            <b>English</b><br>
+            Read • Write • Speak
+        </div>
+
+        <div>
+            <b>Tamil</b><br>
+            Read • Write • Speak
+        </div>
+
+        <div>
+            <b>Telugu</b><br>
+            Speak
+        </div>
+    </div>
+</section>
+
+<!-- INTERNSHIP -->
+<section class="card">
+    <h2>Internship</h2>
+
+    <div class="intern-box">
+        <h3>Full Stack Development Intern</h3>
+        <p><b>Company:</b> Digisailor Technologies Pvt Ltd</p>
+        <p><b>Duration:</b> June 2025</p>
+
+        <ul>
+            <li>Frontend using Bootstrap</li>
+            <li>Backend using CodeIgniter</li>
+            <li>Learned cloud computing</li>
+            <li>Worked on full stack concepts</li>
+        </ul>
+
+        <!-- FIXED BUTTON -->
+        <button class="btn-outline" onclick="openModal()">
+            View Certificate
+        </button>
+    </div>
+</section>
+
+<!--CERTIFICATES-->>
+<section class="card">
+    <h2>Certifications</h2>
+
+    <ul>
+        <li>NPTEL Java Certification – Elite (83%)
+            <a href="files/Java_Nptel.pdf" target="_blank" class="cert-btn">View</a>
+        </li>
+    </ul>
+</section>
+
+<!-- PROFILES -->
+<section class="card">
+    <h2>Profiles</h2>
+
+    <div class="profiles-grid">
+
+        <div class="profile-card">
+            <i class="fa-brands fa-github"></i>
+            <h3>GitHub</h3>
+            <a href="https://github.com/shivany18" target="_blank">Visit →</a>
+        </div>
+
+        <div class="profile-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>LeetCode</h3>
+            <a href="https://leetcode.com/Shivanyy" target="_blank">Visit →</a>
+        </div>
+
+        <div class="profile-card">
+            <i class="fa-brands fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+            <a href="https://linkedin.com/in/shivanyk" target="_blank">Visit →</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>📞 8489096649</p>
+    <p>📧 shivanykumar18@gmail.com</p>
+</section>
+
+<!-- ✅ MODAL -->
+<div id="certificateModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+<!-- ✅ SCRIPT -->
+<script>
+function toggleProject(card) {
+    card.classList.toggle("active");
+}
+
+function openModal() {
+    document.getElementById("certificateModal").style.display = "block";
+    document.getElementById("modalImage").src = "images/internship.jpeg";
+}
+
+function closeModal() {
+    document.getElementById("certificateModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById("certificateModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
