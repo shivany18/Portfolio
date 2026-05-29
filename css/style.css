@@ -394,3 +394,16 @@ nav a:hover {
         margin-top: 20px;
     }
 }
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping instead of overlap */
+    gap: 10px;
+}
+.hero-buttons a {
+    flex: 1 1 auto;
+    min-width: 140px;
+    text-align: center;
+}
+.hero-buttons {
+    margin-top: 20px;
+}
