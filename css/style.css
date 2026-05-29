@@ -302,3 +302,31 @@ nav a:hover {
     background: white;
     color: black;
 }
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img img {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .grid,
+    .projects-container,
+    .profiles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
